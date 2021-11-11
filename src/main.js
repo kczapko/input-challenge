@@ -1,4 +1,10 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
 
-createApp(App).mount('#app')
+import AppInput from '@/components/Input.vue';
+
+const app = createApp(App);
+
+app.component('app-input', AppInput);
+
+app.mount('#app');
